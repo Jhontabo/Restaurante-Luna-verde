@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Inicio</a></li>
-                    <li><a href="about.php">Nosotros</a></li>
+                    <li><a href="/view/about.php">Nosotros</a></li>
 					<li><a href="#" onclick="ManagementOnclick();">Administrador</a><li>
 
 					<?php if($Username == null){echo '<li><a href="register.php?ActionType=Register">Registrarse</a></li>';} ?>
