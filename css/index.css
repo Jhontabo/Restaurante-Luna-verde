@@ -56,6 +56,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.telefono h4 i {
+  color: #F4A261;
+  margin-right: 10px;
+}
 .horarios ul {
   list-style: none;
   padding: 0;

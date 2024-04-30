@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="telefono">
-                        <h4>Telefono</h4>
+                        <h4><i class="fas fa-phone"></i>Telefono</h4>
                         <p>+57 300 208 1134</p>
                     </div>
                 </div>
