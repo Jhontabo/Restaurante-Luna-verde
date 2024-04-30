@@ -1,0 +1,117 @@
+/*Fuente Rancho footer titulo luna verde*/
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+
+
+
+/*Footer*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  padding: 0px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.luna-verde h2 {
+  font-family: 'Rancho', cursive;
+  font-size: 46px;
+  color: #8bc34a;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.luna-verde p {
+  font-size: 12px;
+  margin-left: 30px;
+  width: 280px;
+  text-align: justify;
+}
+
+.verde {
+  color: #F4A261
+}
+
+.horarios h4{
+  color: #7AB828;
+  margin-bottom: 10px;
+}
+
+.direccion h4{
+  color: #E76F51;
+  margin-bottom: 10px;
+}
+.telefono h4 {
+  color: #F4A261;
+  margin-bottom: 10px;
+}
+
+.horarios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horarios ul li {
+  margin-bottom: 5px;
+  font-size: 12px;
+
+}
+
+/*Redes sociales */
+
+.redes-sociales{
+  margin-left: 30px;
+}
+/* Estilos de los íconos de las redes sociales */
+.redes-sociales a {
+  color: #ffffff;
+  font-size: 40px;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out; /* Efecto de transición en el color */
+}
+
+/* Efecto hover en los íconos de las redes sociales */
+.redes-sociales a:hover {
+  color: #7AB828; /* Cambia el color del ícono al pasar el cursor por encima */
+  transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el cursor por encima */
+}
+
+/* Animación para los íconos de las redes sociales */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.redes-sociales a {
+  animation: bounce 1s infinite; /* Animación que se repite infinitamente */
+}
+.creditos {
+  padding: 0px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 0PX;
+  
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
