@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 
-
+body {
+  margin: 0;
+  padding: 0;
+}
 
 
 /*Footer*/
@@ -74,15 +77,14 @@ footer {
 
 /*Redes sociales */
 
-.redes-sociales{
-  margin-left: 30px;
-}
+
 /* Estilos de los íconos de las redes sociales */
 .redes-sociales a {
   color: #ffffff;
   font-size: 40px;
   margin-right: 10px;
   transition: color 0.3s ease-in-out; /* Efecto de transición en el color */
+  margin-left: 30px;
 }
 
 /* Efecto hover en los íconos de las redes sociales */
@@ -113,6 +115,11 @@ footer {
   font-size: 12px;
   margin-top: 0PX;
   
+}
+
+.creditos p {
+  margin: 0;
+  padding: 0;
 }
 
 .copyright {
