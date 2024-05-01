@@ -24,20 +24,17 @@
 <body>
 
     <header>
-        <h2>Luna verde</h2>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <span class="luna-verde">Luna <span>Verde</span></span>
+            <a href="#menu">Menú</a>
+            <a href="#admin">Administrador</a>
+            <div class="logo"><img src="./img/logoLunaVerde.png" alt="Logo" class="logo"></div>
+        </nav>
     </header>
 
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="about.php">Nosotros</a></li>
-                <li><a href="#" onclick="ManagementOnclick();">Administrador</a>
-            </ul>
-        </div>
-        </div>
-        </div>
-    </nav>
+
 
     <?php
     $conn = mysqli_connect("localhost", "root", "", "smss_db");

@@ -5,6 +5,59 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*Navbar*/
+
+header {
+  text-align: center;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+}
+
+nav.navbar a{
+  display: block;
+  color: black;
+  font-weight: bold;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+nav.navbar .luna-verde{
+  display: block;
+  font-weight: bold;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 80px;
+}
+
+nav.navbar a:hover {
+  color: green;
+}
+
+
+.navbar .luna-verde {
+  color: #8bc34a; /* Color para "Luna" */
+  font-family: 'Rancho', cursive;
+
+}
+
+.navbar .luna-verde span {
+  color: #F4A261; /* Color específico para "Verde" */
+}
+
+/* Estilos para el logo (reemplaza con tu propio logo) */
+.logo {
+  float: right;
+  width: 150px; /* Ajusta esto según el tamaño de tu logo */
+  height: 150px; /* Ajusta esto según el tamaño de tu logo */
 }
 
 
@@ -25,7 +78,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.luna-verde h2 {
+.footer-grid .luna-verde h2 {
   font-family: 'Rancho', cursive;
   font-size: 46px;
   color: #8bc34a;
@@ -34,14 +87,15 @@ footer {
   margin-bottom: 10px;
 }
 
-.luna-verde p {
+.footer-grid .luna-verde p {
   font-size: 12px;
   margin-left: 30px;
   width: 280px;
+  color: #fff;
   text-align: justify;
 }
 
-.verde {
+.footer-grid .verde {
   color: #F4A261
 }
 
