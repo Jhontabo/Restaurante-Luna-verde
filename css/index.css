@@ -66,7 +66,9 @@ nav.navbar a:hover {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #F4F4F4;
+  background-color: #fff;
+  padding-top: 50px;
+  
   
 }
 
@@ -86,11 +88,12 @@ nav.navbar a:hover {
 }
 
 .imagenes-platos img {
-  width: 500px; 
-  height: 300px ; /* Ajusta la altura automáticamente */
+  width: 550px; 
+  height: 320px ; /* Ajusta la altura automáticamente */
   border: 2px solid gray; /* Borde opcional */
   border-radius: 10px; /* Bordes redondeados */
   margin-bottom: 5px ;
+  margin-left: 30px;
 }
 
 /* Estilos para el botón .ver-menu */
@@ -110,6 +113,190 @@ nav.navbar a:hover {
 .ver-menu:hover {
   background-color: #367B37; /* Color verde más oscuro para el hover */
 }
+
+
+
+/*Section mision y vision*/
+
+.title-mision-vision h2{
+  font-size: 56px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Negrita para el título */
+  font-family: 'Rancho', cursive; /* Tipo de letra para el título */
+  margin-bottom: 0.5em; 
+  margin: 0;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.container-mision-vision {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Separa el título y la imagen */
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+.mision-vision-title {
+  flex: 1; /* Ocupa el espacio disponible */
+  margin-right: 20px; /* Espacio entre el título y la imagen */
+}
+
+
+.mision {
+  color: #8bc34a; /* Color para 'Misión' */
+}
+
+.y {
+  color: black; /* Color para 'y' */
+}
+
+.vision {
+  color: #F4A261; /* Color para 'Visión' */
+}
+
+.descripcion-mision-vision {
+  flex: 1; /* Ocupa el espacio disponible */
+  max-width: 50%; /* Máximo ancho del texto */
+}
+
+.descripcion-mision-vision h3{
+
+  font-family: 'Rancho', cursive;
+  font-size: 46px;
+  color: #8bc34a;
+  margin-left: 40px;
+}
+
+.descripcion-mision-vision .vision{
+
+  color: #F4A261
+}
+
+.descripcion-mision-vision p {
+  font-size: 25px; /* Tamaño de fuente para los párrafos */
+  line-height: 1.6; /* Altura de línea para los párrafos */
+  color: #333; /* Color para los párrafos */
+  margin-bottom: 1em; /* Espacio debajo de los párrafos */
+  margin-left: 40px;
+}
+
+.imagenes-plato {
+  flex-basis: 50%;
+}
+
+.imagenes-plato img {
+  
+  width: 650px; 
+  height: 400px ; /* Ajusta la altura automáticamente */
+  border: 2px solid gray; /* Borde opcional */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 5px ;
+  margin-left: 130px;
+  
+}
+
+
+/*Section Menu*/
+
+.title-menu h2{
+    font-family: 'Rancho', cursive;
+    font-size: 70px;
+    color: #8bc34a;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
+.menu {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+
+.menu-column {
+  flex-basis: 48%;
+  padding: 10px;
+}
+
+.menu-column h3 {
+  font-family: 'Rancho', cursive;
+  font-size: 56px;
+  color: #8bc34a;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.menu-column .desayunos {
+  
+  color: #F4A261;
+  
+}
+
+.menu-column .almuerzos {
+  
+  color: #F4A261;
+  
+}
+.menu-item {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.item-info h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.item-info p {
+  margin: 0;
+  font-size: 20px;
+  color: #666;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.item-info button {
+  background-color: #7AB828;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 20%;
+  margin-left: 30px;
+}
+
+
+
 
 /*Footer*/
 
@@ -146,7 +333,7 @@ footer {
 }
 
 .footer-grid .verde {
-  color: #F4A261
+  color: #F4A261;
 }
 
 .horarios h4{
