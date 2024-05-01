@@ -29,37 +29,26 @@
             <a href="#nosotros">Nosotros</a>
             <span class="luna-verde">Luna <span>Verde</span></span>
             <a href="#menu">Menú</a>
-            <a href="#admin">Administrador</a>
+            <a href="./administrador.php">Administrador</a>
             <div class="logo"><img src="./img/logoLunaVerde.png" alt="Logo" class="logo"></div>
         </nav>
     </header>
 
-
-
-    <?php
-    $conn = mysqli_connect("localhost", "root", "", "smss_db");
-    $sql = "SELECT * FROM `tbl_products` Limit 50";
-    $Resulta = mysqli_query($conn, $sql);
-    ?>
-
-
-    <?php while ($Rows = mysqli_fetch_array($Resulta)) {
-        echo '	
-		<div class="col-sm-4 col-lg-4 col-md-4">
-             <div class="thumbnail">
-				<h4 style="text-align: center;">' . $Rows[2] . '</h4>
-                <img style="border: 2px solid gray; border-radius: 10px; height: 229px; width: 298px;" src="data:image;base64,' . $Rows[8] . '" alt="">
-                <div class="caption">
-					<p><strong>Nombre del Producto:</strong> ' . $Rows[1] . '</p>
-					<p><strong>Dimensiones:</strong> ' . $Rows[3] . '</p>
-					<p><strong>Colores Disponibles:</strong> ' . $Rows[4] . '</p>
-					<p><strong>$ ' . $Rows[5] . '.00</strong></p>
-                </div>
-				<center><a onclick="addToCartOnclick(' . $Rows[0] . ');" href="#"  style="margin-bottom: 5px;" class="btn btn-primary">Agregar al Carrito</a></center>
-            </div>
+    <section class="sobre-restaurante">
+        <div class="descripcion-restaurante">
+            <p>El restaurante "Luna Verde" es un restaurante familiar donde se sirve comida casera dentro de un
+                establecimiento y también hace entregas a domicilio. El restaurante se encuentra ubicado en el barrio
+                San Ignacio en la ciudad de Pasto. Hace parte del sector privado colombiano y funciona hace más de 18
+                años.</p>
+            <button class="ver-menu">Ver Menú</button>
         </div>
-		';
-    } ?>
+        <div class="imagenes-platos">
+            <!-- Añade aquí tus imágenes de los platos -->
+            <img src="./img/platoSectionSobre.jpg" alt="Plato 1">
+            <img src="./img/caldoDeCostilla.jpg" alt="Plato 2">
+        </div>
+    </section>
+
 
     </div>
     <footer>

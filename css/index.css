@@ -60,6 +60,56 @@ nav.navbar a:hover {
   height: 150px; /* Ajusta esto según el tamaño de tu logo */
 }
 
+/*Section info*/
+
+.sobre-restaurante {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F4F4F4;
+  
+}
+
+.descripcion-restaurante {
+  flex-basis: 50%;
+  font-size: 30px;
+  padding: 20px;
+  margin-right: 150px;
+}
+
+.descripcion-restaurante p{
+  margin-bottom: 100px;
+}
+
+.imagenes-platos {
+  flex-basis: 50%;
+}
+
+.imagenes-platos img {
+  width: 500px; 
+  height: 300px ; /* Ajusta la altura automáticamente */
+  border: 2px solid gray; /* Borde opcional */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 5px ;
+}
+
+/* Estilos para el botón .ver-menu */
+.ver-menu {
+  background-color: #4CAF50; /* Color verde para el botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 220px;
+
+  /* Elimina cualquier margen o alineación adicional si existe */
+}
+
+.ver-menu:hover {
+  background-color: #367B37; /* Color verde más oscuro para el hover */
+}
 
 /*Footer*/
 
