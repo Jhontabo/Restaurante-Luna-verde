@@ -296,6 +296,96 @@ nav.navbar a:hover {
 }
 
 
+/*Section Consumidor feliz*/
+
+
+
+.title-consumidorFeliz h2 {
+  font-size: 120px;
+  font-family: 'Rancho', cursive;
+  color: #8bc34a;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.title-consumidorFeliz .feliz {
+  color: #F4A261;
+}
+
+
+
+
+/*Imagenes de testimonios*/
+
+.testimonial-section {
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom:30px ;
+  border-radius: 20px;
+}
+
+
+.testimonial-container {
+  background-image: url('https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  display: inline-block;
+  padding: 20px;
+  margin: 0 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.testimonial-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según desees */
+  z-index: -1;
+  border-radius: 15px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #fff;
+  quotes: "“" "”" "‘" "’";
+  font-size: 30px;
+}
+
+blockquote:before,
+blockquote:after {
+  content: open-quote;
+  font-size: 50px;
+  line-height: 0;
+  color: #fff;
+  vertical-align: -0.4em;
+}
+
+.testimonial-navigation {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #7b7b7b;
+}
 
 
 /*Footer*/

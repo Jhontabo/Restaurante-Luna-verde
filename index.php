@@ -90,8 +90,8 @@
                     <div class="item-info">
                         <h4>Desayuno completo</h4>
                         <p>$7.500</p>
-                        <p>Incluye huevo,arroz carne,tajas y ensalada, tambien incluye bebida 
-                        caliente como cafe.</p>
+                        <p>Incluye huevo,arroz carne,tajas y ensalada, tambien incluye bebida
+                            caliente como cafe.</p>
                         <button>Pedir</button>
                     </div>
                 </div>
@@ -152,9 +152,28 @@
         </div>
     </section>
 
-
-
+    <div class="title-consumidorFeliz">
+        <h2>Eslo<spanc class="feliz" >gan</spanc></h2>
     </div>
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <blockquote>
+                "Sumérgete en la auténtica tradición culinaria con nuestro delicioso sabor casero, cuidadosamente
+                elaborado para brindarte una experiencia gastronómica reconfortante y llena de nostalgia. En cada
+                bocado, encontrarás la esencia de los sabores familiares, preparados con pasión y dedicación, como si
+                estuvieras disfrutando de una comida en casa."
+            </blockquote>
+            <div class="testimonial-navigation">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <footer>
         <div class="container">
             <div class="footer-grid">
