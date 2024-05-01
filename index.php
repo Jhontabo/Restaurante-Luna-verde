@@ -153,7 +153,8 @@
     </section>
 
     <div class="title-consumidorFeliz">
-        <h2>Eslo<spanc class="feliz" >gan</spanc></h2>
+        <h2>Eslo<spanc class="feliz">gan</spanc>
+        </h2>
     </div>
     <section class="testimonial-section">
         <div class="testimonial-container">
@@ -171,8 +172,54 @@
         </div>
     </section>
 
+    <div class="title-equipoCocina">
+        <h2>Equipo de Trabajo</h2>
+    </div>
+    <section class="equipo-de-trabajo">
+        <div class="expertos">
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/7e63/efc8/af7856cf4fa3b1251a33656b6c0aefaf?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z9DzKHWcXX4sNTzPKpLjQHiXwimj0J3RoU99uwl6VDu4H~I3INgUAA-tOXQTCg4~JVdTg1GixOn1HYkegY2R2VDXV5WIXPKhBOM2uI1eXwuZVMjZUwC8~izJlqYSGtnn5Q5crY8hSx91870v9ko24FUjZnsC~4nb~S7cbwHLB335R-oLcIr9Ok1L5T5Yc3j1fsZHzU4eYZPpeJ-QwMpQ0d9k~~uZTA2men0L9mgiqfOEleR-0YoAlUZq5VAo-vFw2jwEwo80rJyq~t8c9w2-IH1x5lVY27mdZiWmU3bxAbN046Yrm~3GJrSC1PihOwSUppHFf4AqxUeEsa8HLd6rTQ__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Rodrigo Russo</h3>
+                <p>Chef</p>
+            </div>
 
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/fc09/4d17/853b0f76f78c459eacde6f5a72c9efc4?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OJ0JqGqu8B0A7DsE4zQPXhtuhN34Gy4nNNqTHjm6gL2pidA~bvKOdfml5zgRQDQ9X7i43RUyfts26FGsgPOw~NPmMuxUzWI5jpb3LOlJx4xi1OzhFZVUCGqBNkgdyZBm8WBPn6rm71h-790qjbTPIzr~aP7xxy3qH4Mjv5YLo2MVKgWhhii~fUU6egWStP0aq768l-7BjvrHj7hF9GeXgP86WGs-C95NCvLzFW44OjRn~Z0R6YwQuZM-VdtaL-GN5ZOiApB-M0RmZkzoO8499lGgTysWLba95wvi~v~U6UUfvwYlPurvJKQzJPo8OexixnposurXNbZ4B~dAupMhUw__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Antonio Martinez</h3>
+                <p>Asistente de cocina</p>
+            </div>
 
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/71fe/6e1b/454ab8ba1e7a4738533829b547c347b1?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z2bBfP5SC1G4xWOOHdUcBEQk40cUEX48o5FgI7fIuVDpl28VoAQO6Bk1Jw9SZDKmfj1F0IKFSaxhsK8m3EYw~H12FOaoXtK7HdcbtRc8fCAH2Nl1s-qpqsFY0s-90t77jXT64MFqlan2PhLzY55ve5CTeJhMCoBSt6Z~7aPFPuL9KU4WC53jd9XShBcQYVo7bfsivpwkAQUoW0nb5tSLzoudhrJguhHK100ytKAfVKexYbSCgj8xFAi8naUnNcuEbXgHzAqG7W-WtyFfwqHq3iIEYIyH9VpwFuX43tQVgvM7vYhtM6l409NtlE~plMzFxCug0pCfa7ukmLif0UEcdQ__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Sofia Muñoz</h3>
+                <p>Contadora</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/56b5/b796/af53f19d05321b9be7ade1955b01f2bb?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TCOkHUdUY8nN1kUaXZhJ-7t15L8goOccFGoLR1XHuorHh0RU59M9egnGqa6wjgIy34k~QMPENXnw-xo~HwMKPi~To54b0P3EvAk5Kas7VVZmzZdTXMAehYOHJlvTzF5O6YZXvCDyr1d4xlcgQx1vR6CgsGT6KaEykvP2T9I4Ro-yrD4i9a0KRX5FJ2OpoG3v4dA-jZxqeF~Uub4b4uNx2AVCbCOOsNsfOIa3AqlnWjstI5GjvMv0-mr08t8hQV4fSx9iDLYHXV0feic6ePMp8ewK74h3ZEfzrZuTUwBdRKflHHeHsoIEAeNJTrSHNmWdgZLO--tVojzr1cHGZux~HA__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Paula portilla</h3>
+                <p>Mesera</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/d225/512e/9ec323457e9afdf6b221b3f605df937f?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C81TWwdFh3jXsOyTajeiBujq2XInXGfgvxWy6BJ5wHEBxVxHLJ4sCJPwkMRBgsIl--TEaRn2jbbiyWmP2SbeZtcIaK87ioZ~RO9-4cSHAqM~YFsq8Vq5LmcDnUfdBHmdwUcyZPYM7hi89QFAl7S5b30zrJNGzVml4iZyjMmqxsxTRmGdzj-72G6d825bfx3aKyvRHERCgZiLauOI~zQSFbEf92It-nndhdALqxyqaaiVVPjERE0GEI6JE1RNR9V9Lc-zsJGHv0njN6XEkhScDmqnzJJ5swOCBvCNN22gSbw57cGp3NN~C5ey-MYl~0EWU-t8dH298laDx15xF5FBYA__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Sebastian Jurado</h3>
+                <p>Abogado</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/0d26/dac7/c64dd07376f160154b72d0eee439e65f?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bOssJCQfyU58HQUxKKX1M3t4VFp8RvkogWPaqFlebfrDJD3Y5O8HkRzctU2aWZkAOSBwEpSiU8v8ayiVejUDNhiY-wsdzDF-2KrSHILZ2YM3EA2rq9o-GGDQRXIS8oAYZNn3WmPUHDDAOJmq1qi8FnItWQGYYWrWimp27d3OeKGm3PqNUhoGfWPvgRl2TKgbB5BKdk3rg~ITG6oHiYS1fW~mbO2GWPuBgdJcdhN0YDETBXseBG6hRXbbAQu9ohBsVPxlADWhF8JRknvs-No0~Hg0RoaQfQHP~TY7Gpfs6sUTaIcO9ezhlDDJu0idMmF3XvrcZERMn1YRRT~yuImygQ__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Natalia Villota</h3>
+                <p>Proveedora</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">

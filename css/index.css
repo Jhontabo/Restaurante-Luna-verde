@@ -388,6 +388,82 @@ blockquote:after {
 }
 
 
+
+/*Section Equipo-Cocina*/
+.equipo-de-trabajo {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.equipo-de-trabajo h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Estilos para los miembros del equipo */
+
+
+.title-equipoCocina {
+  font-size: 30px;
+  font-family: 'Rancho', cursive;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.expertos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.miembro {
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  border-radius: 5%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.miembro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.expertos .miembro img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.miembro h3 {
+  color: #333;
+  margin: 0;
+}
+
+.miembro p {
+  color: #666;
+  margin: 5px 0 0;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .miembro {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .miembro {
+    width: 100%;
+  }
+}
+
 /*Footer*/
 
 footer {
