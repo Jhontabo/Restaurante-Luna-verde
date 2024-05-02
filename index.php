@@ -26,7 +26,7 @@
     <header>
         <nav class="navbar">
             <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
+            <a href="#container-mision-vision">Nosotros</a>
             <span class="luna-verde">Luna <span>Verde</span></span>
             <a href="#menu">Menú</a>
             <a href="./administrador.php">Administrador</a>
@@ -40,10 +40,10 @@
                 establecimiento y también hace entregas a domicilio. El restaurante se encuentra ubicado en el barrio
                 San Ignacio en la ciudad de Pasto. Hace parte del sector privado colombiano y funciona hace más de 18
                 años.</p>
-            <button class="ver-menu">Ver Menú</button>
+            
+                <button class="ver-menu" onclick="desplazarseAMenu()">Ver Menú</button>
         </div>
         <div class="imagenes-platos">
-            <!-- Añade aquí tus imágenes de los platos -->
             <img src="./img/platoSectionSobre.jpg" alt="Plato 1">
             <img src="./img/caldoDeCostilla.jpg" alt="Plato 2">
         </div>
@@ -57,7 +57,7 @@
         </h2>
     </div>
 
-    <section class="container-mision-vision">
+    <section id="container-mision-vision">
         <div class="descripcion-mision-vision">
             <h3>Misión</h3>
             <p>El restaurante es una empresa familiar colombiana dedicada a la preparación de comida casera, con un
@@ -80,7 +80,7 @@
     <div class="title-menu">
         <h2>Menu</h2>
     </div>
-    <section class="menu">
+    <section id="menu">
         <div class="menu-container">
             <div class="menu-column">
                 <h3>Desa<span class="desayunos">yunos</span></h3>
@@ -92,7 +92,7 @@
                         <p>$7.500</p>
                         <p>Incluye huevo,arroz carne,tajas y ensalada, tambien incluye bebida
                             caliente como cafe.</p>
-                        <button>Pedir</button>
+                        <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
                 <div class="menu-item">
@@ -102,7 +102,7 @@
                         <h4>Desayuno intermedio</h4>
                         <p>$5.000</p>
                         <p>Incluye huevo,arroz y tajas, tambien incluye bebida caliente como cafe.</p>
-                        <button>Pedir</button>
+                        <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
                 <div class="menu-item">
@@ -112,7 +112,7 @@
                         <h4>Desayuno básico</h4>
                         <p>$4.000</p>
                         <p>Incluye huevo,arroz y tajas</p>
-                        <button>Pedir</button>
+                        <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                         <h4>Sopa del día</h4>
                         <p>$4.000</p>
                         <p>Incluye unicamente sopa del dia.</p>
-                        <button>Pedir</button>
+                        <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
                 <div class="menu-item">
@@ -135,7 +135,7 @@
                         <h4>Bandeja</h4>
                         <p>$8.500</p>
                         <p>Incluye arroz,carne, tajas, principio y ensalada, tambien incluye jugo y postre.</p>
-                        <button>Pedir</button>
+                        <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
                 <div class="menu-item">
@@ -145,7 +145,7 @@
                         <h4>Almuerzo completo</h4>
                         <p>$10.00</p>
                         <p>Incluye sopa y bandeja.</p>
-                        <button>Pedir</button>
+                        <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
             </div>
@@ -282,5 +282,8 @@
         </div>
     </footer>
 </body>
+
+<script src="./js/desplazarse.js"></script>
+<script src="./js/script.js"></script>
 
 </html>
