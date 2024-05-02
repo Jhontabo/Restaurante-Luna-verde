@@ -40,8 +40,8 @@
                 establecimiento y también hace entregas a domicilio. El restaurante se encuentra ubicado en el barrio
                 San Ignacio en la ciudad de Pasto. Hace parte del sector privado colombiano y funciona hace más de 18
                 años.</p>
-            
-                <button class="ver-menu" onclick="desplazarseAMenu()">Ver Menú</button>
+
+            <button class="ver-menu" onclick="desplazarseAMenu()">Ver Menú</button>
         </div>
         <div class="imagenes-platos">
             <img src="./img/platoSectionSobre.jpg" alt="Plato 1">
@@ -283,7 +283,7 @@
     </footer>
 </body>
 
-<script src="./js/desplazarse.js"></script>
 <script src="./js/script.js"></script>
 
 </html>
+
