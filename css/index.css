@@ -202,13 +202,13 @@ nav.navbar a:hover {
 
 /*Section Menu*/
 
-.title-menu h2{
-    font-family: 'Rancho', cursive;
-    font-size: 70px;
-    color: #8bc34a;
-    text-align: center;
-    margin: 0;
-    padding-top: 30px;
+.title-menu h2 {
+  font-family: 'Rancho', cursive;
+  font-size: 70px;
+  color: #8bc34a;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
 }
 
 #menu {
@@ -225,29 +225,14 @@ nav.navbar a:hover {
   margin-bottom: 50px;
 }
 
-.menu-column {
-  flex-basis: 48%;
-  padding: 10px;
-}
 
-.menu-column h3 {
-  font-family: 'Rancho', cursive;
-  font-size: 56px;
+.menu-title {
+  font-size: 36px;
   color: #8bc34a;
-  margin-bottom: 50px;
-  text-align: left;
-}
-.menu-column .desayunos {
-  
-  color: #F4A261;
-  
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-.menu-column .almuerzos {
-  
-  color: #F4A261;
-  
-}
 .menu-item {
   display: flex;
   margin-bottom: 25px;
@@ -259,6 +244,23 @@ nav.navbar a:hover {
   object-fit: cover;
   margin-right: 10px;
   border-radius: 50%;
+}
+
+.boton-desayunos,
+.boton-almuerzos {
+  color: #7AB828;
+  padding: 10px 20px;
+  border: none;
+  font-size: 38px;
+  font-family: 'Rancho', cursive;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.boton-desayunos-span,
+.boton-almuerzos-span {
+  color: #F4A261;
 }
 
 .item-info {
@@ -295,7 +297,6 @@ nav.navbar a:hover {
   border-radius: 20%;
   margin-left: 30px;
 }
-
 
 /*Section Consumidor feliz*/
 

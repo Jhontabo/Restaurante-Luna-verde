@@ -83,7 +83,9 @@
     <section id="menu">
         <div class="menu-container">
             <div class="menu-column">
-                <h3>Desa<span class="desayunos">yunos</span></h3>
+                <button class="boton-desayunos" onclick="redirigirADesayunos()">
+                    <span>Desa</span><span class="boton-desayunos-span">yunos</span>
+                </button>
                 <div class="menu-item">
                     <img src="https://s3-alpha-sig.figma.com/img/7790/1b3e/51303a79b3c9fafda46ad3a29e59e745?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EkIrGCIQSSouKfmSLQXjalpxy3xK7OmylUWBxDBbSNoP5xUrEuqVralRGO9rP94DvnJPBTm7kI5XGPD4HuRYTHwPDSXC46F1r0INLEHnPsO-~53wdqnwzpC9Tf2kcgMqxkSxsGGy8Qp4g2yLDqKLCcFjoehOsCE8i3IKQqKj~S8jkeE5A6fG7pFxQRRIfVBOOZiYSAI1Cry4RgR36fOTwn1Xo-SH6hEF1je6sevCN3odlLefffUMyTc5wIBYjS5GclDaSuqQ-NXVSUe4gypGJT3Lw1jHHupdB91TJIuYQK4qHvhHJwuGCwwcBFM20Lioj273vH9MCJFScJN7HvXYow__"
                         alt="Desayuno completo">
@@ -117,7 +119,9 @@
                 </div>
             </div>
             <div class="menu-column">
-                <h3><span class="almuerzos">Almu</span>erzos</h3>
+                <button class="boton-almuerzos" onclick="redirigirAAlmuerzos()">
+                    <span class="boton-almuerzos-span">Almu</span>erzos
+                </button>
                 <div class="menu-item">
                     <img src="https://s3-alpha-sig.figma.com/img/fa2f/8982/5d699a5d1965aa5b16dc720c7fc9bd15?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DF4xwNJFYqWJitHHbtHVeJ26sF4cyjhV5VcQl1FtK8cjRbfYhmoSAUGH-pzCR-RjkVdVxNJp0~8JaY8hYKp5QaCzYnX3ImPMB3vSkX6RqH~mFUZ-dXu0DcD7UHsup0-B63Or0b~vM40JedHwf6AUqh21gUwSe2qCsVlKShiXxhV3QXIUm~yu0xizdCpPKEVvTImW278s~G1ORAUXZcBkMxr0QRtrWRFDgDqxt2Y6Zu9sMre0U3fm6LrXZVbgrApSo0raojvOvrBRRix8i9aNagRTzQMto-~HTVo2OXIsXOSOyX9Q6Gj0eRG0Knl4-NfvzcvJrQ7DzgIJfGpyL53jLw__"
                         alt="Sopa del día">
@@ -284,6 +288,6 @@
 </body>
 
 <script src="./js/script.js"></script>
+<script src="./js/Menu.js"></script>
 
 </html>
-

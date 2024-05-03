@@ -50,3 +50,6 @@ function desplazarseAMenu() {
   const menuSection = document.getElementById('menu');
   menuSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+
