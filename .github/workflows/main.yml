@@ -1,6 +1,6 @@
 name: Push-to-EC2
 
-# Trigger deployment only on push to main branch main
+# Trigger deployment only on push to main branch
 on:
   push:
     branches:
@@ -23,31 +23,21 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
 
-      - name: Remove old repository and clone new one
+      - name: Pull latest changes from GitHub
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            rm -rf /var/www/html/Restaurante-Luna-verde
-            cd /var/www/html
-            git clone git@github.com:Jhontabo/Restaurante-Luna-verde.git
-
-      - name: Set permissions for Apache
+            cd /var/www/html/Restaurante-Luna-verde
+            git pull origin main
+            sudo systemctl restart apache2
+      - name: Reload web page
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo chmod -R 755 /var/www/html/Restaurante-Luna-verde
-
-      - name: Reload Apache
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST_DNS }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            sudo service apache2 restart
+            sudo service apache2 reload
