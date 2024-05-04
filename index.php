@@ -29,7 +29,7 @@
             <a href="#container-mision-vision">Nosotros </a>
             <span class="luna-verde">Luna <span>Verde</span></span>
             <a href="#menu">Menú</a>
-            <a href="./Dashboard.php">Dashboard</a>
+            <a href="./Board.php.php">Dashboard</a>
             <div class="logo"><img src="./img/logoLunaVerde.png" alt="Logo" class="logo"></div>
         </nav>
     </header>
