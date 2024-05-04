@@ -33,7 +33,6 @@ jobs:
             cd /var/www/html/Restaurante-Luna-verde
             git pull origin main
             sudo systemctl restart apache2
-
       - name: Reload web page
         uses: appleboy/ssh-action@master
         with:
