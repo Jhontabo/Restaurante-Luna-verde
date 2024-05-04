@@ -26,10 +26,10 @@
     <header>
         <nav class="navbar">
             <a href="#inicio">Inicio</a>
-            <a href="#container-mision-vision">Nosotros</a>
+            <a href="#container-mision-vision">Nosotros </a>
             <span class="luna-verde">Luna <span>Verde</span></span>
             <a href="#menu">Menú</a>
-            <a href="./administrador.php">Administrador</a>
+            <a href="./Dashboard.php">Administrador</a>
             <div class="logo"><img src="./img/logoLunaVerde.png" alt="Logo" class="logo"></div>
         </nav>
     </header>
