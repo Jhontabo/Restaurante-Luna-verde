@@ -31,7 +31,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             rm -rf /var/www/html/Restaurante-Luna-verde
-            git clone https://github.com/yourusername/your-repo.git /var/www/html/Restaurante-Luna-verde
+            git clone git@github.com:Jhontabo/Restaurante-Luna-verde.git /var/www/html/
 
       - name: Set permissions for Apache
         uses: appleboy/ssh-action@master
