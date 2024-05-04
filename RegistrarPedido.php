@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registrar Pedido</title>
 <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
-<link rel="stylesheet" href="./css/Registrarpedido.css">
+<link rel="stylesheet" href="./css/RegistrarPedido.css">
 </head>
 <body>
   <div class="registro-container">
