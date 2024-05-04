@@ -13,12 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy code to EC2
-        uses: appleboy/ssh-action@master
+      - name: Install SSH key
+        uses: webfactory/ssh-agent@v0.5.3
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_PRIVATE_KEY }}
-          script: |
-            cd /var/www/html/Restaurante-Luna-verde
-            git pull origin main
+          ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
+
+      - name: Update application on EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY ubuntu@34.229.195.125 'cd /var/www/html/Restaurante-Luna-verde && git pull origin main'
