@@ -221,7 +221,7 @@ nav.navbar a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 130px;
+  margin-left: 110px;
   margin-bottom: 50px;
 }
 
@@ -239,8 +239,8 @@ nav.navbar a:hover {
 }
 
 .menu-item img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   margin-right: 10px;
   border-radius: 50%;
