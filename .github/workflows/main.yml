@@ -1,6 +1,6 @@
 name: Push-to-EC2
 
-# Trigger deployment only on push to main branch
+# Trigger deployment only on push to main branch 
 on:
   push:
     branches:
@@ -31,8 +31,8 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /var/www/html/Restaurante-Luna-verde
-            git pull origin main
-            sudo systemctl restart apache2
+            git fetch origin
+            git reset --hard origin/main
 
       - name: Reload web page
         uses: appleboy/ssh-action@master
