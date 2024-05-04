@@ -26,7 +26,7 @@
     <header>
         <nav class="navbar">
             <a href="#inicio">Inicio</a>
-            <a href="#container-mision-vision">Mision y vision</a>
+            <a href="#container-mision-vision">Nosotros</a>
             <span class="luna-verde">Luna <span>Verde</span></span>
             <a href="#menu">Menú</a>
             <a href="./administrador.php">Administrador</a>
