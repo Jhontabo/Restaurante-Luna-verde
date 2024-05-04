@@ -399,10 +399,6 @@ blockquote:after {
   margin-bottom: 50px;
 }
 
-.equipo-de-trabajo h2 {
-  color: #333;
-  margin-bottom: 30px;
-}
 
 /* Estilos para los miembros del equipo */
 
@@ -410,9 +406,13 @@ blockquote:after {
 .title-equipoCocina {
   font-size: 30px;
   font-family: 'Rancho', cursive;
-  color: #000;
+  color: #8bc34a;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.title-equipoCocina .equipo-cocina{
+  color: #F4A261;
 }
 .expertos {
   display: flex;

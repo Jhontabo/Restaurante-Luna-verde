@@ -177,7 +177,7 @@
     </section>
 
     <div class="title-equipoCocina">
-        <h2>Equipo de Trabajo</h2>
+        <h2>Equipo d<span class="equipo-cocina">e Trabajo</span> </h2>
     </div>
     <section class="equipo-de-trabajo">
         <div class="expertos">
