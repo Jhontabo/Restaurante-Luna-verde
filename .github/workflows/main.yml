@@ -23,22 +23,30 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
 
-      - name: Pull latest changes from GitHub
+      - name: Remove old repository and clone new one
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /var/www/html/Restaurante-Luna-verde
-            git fetch origin
-            git reset --hard origin/main
+            rm -rf /var/www/html/Restaurante-Luna-verde
+            git clone https://github.com/yourusername/your-repo.git /var/www/html/Restaurante-Luna-verde
 
-      - name: Reload web page
+      - name: Set permissions for Apache
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo service apache2 reload
+            sudo chmod -R 755 /var/www/html/Restaurante-Luna-verde
+
+      - name: Reload Apache
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            sudo service apache2 restart
