@@ -20,11 +20,6 @@ function cambiarImagen(imagenNueva) {
   nuevaImagen.src = imagenNueva; // Comienza a cargar la nueva imagen
 }
 
-function redirigirAPedir() {
-  window.location.href = './RegistrarPedido.php';
-}
-
-
 
 
 function desplazarseASeccion(event) {

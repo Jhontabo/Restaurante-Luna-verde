@@ -21,7 +21,7 @@ $Hola = "Hola";
 
   <div class="contenedor-principal">
     <header class="cabecera">
-      <h1 class="titulo"><span class="verde">Desa</span><span class="naranja">yunos</span></h1>
+      <h1 class="titulo"><span class="verde">Almu</span><span class="naranja">erzos</span></h1>
       <img src="./img/logoLunaVerde.png" alt="Logo" class="logo">
     </header>
 
@@ -60,11 +60,12 @@ $Hola = "Hola";
       </section>
     </main>
     <footer class="pie-pagina">
-      <button class="boton-salir">Salir</button>
+      <button class="boton-salir" onclick="redirigirInicio()">Regresar</button>
     </footer>
   </div>
 </body>
 
 <script src="./js/script.js"></script>
+<script src="./js/regresar.js"></script>
 
 </html>

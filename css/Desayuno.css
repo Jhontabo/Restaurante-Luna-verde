@@ -70,19 +70,12 @@ body {
   width: 35vh;
   height: 35vh;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del círculo */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transiciones suaves para transformación, sombra y color de fondo */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Asegura que el contenido no se desborde */
+  transition: transform 0.3s ease; /* Agrega una transición de transformación */
 }
 
 .circulo-central:hover {
-  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra más grande al pasar el mouse */
+  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
 }
-
 
 .opciones-desayuno {
   display: flex;

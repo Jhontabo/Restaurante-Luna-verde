@@ -478,7 +478,7 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   margin-bottom: 30px;
 }
@@ -540,10 +540,10 @@ footer {
 /* Estilos de los íconos de las redes sociales */
 .redes-sociales a {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 30px;
   margin-right: 10px;
   transition: color 0.3s ease-in-out; /* Efecto de transición en el color */
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 /* Efecto hover en los íconos de las redes sociales */

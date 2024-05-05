@@ -237,11 +237,13 @@
                         de los sabores familiares, preparados con pasión y dedicación, como si estuvieras
                         disfrutando de una comida en casa.</p>
                     <p class="copyright">2009 - 2024</p>
+
                     <div class="redes-sociales">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                        <a href="https://twitter.com/JhonseTabo" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Jhontabo/Restaurante-Luna-verde" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="horarios">
