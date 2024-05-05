@@ -37,7 +37,7 @@ $Hola = "Hola";
             <p class="calorias">850 calorias</p>
 
           <div class="precio-contenedor">
-            <button class="precio">$7.500</button>
+            <button onclick="redirigirAPedir()" class="precio">$7.500</button>
           </div>
 
         </article>
@@ -46,7 +46,7 @@ $Hola = "Hola";
           <img src="./img/Desayuno3.jpg" alt="Desayuno intermedio" onclick="cambiarImagen('./img/Desayuno3.jpg')">
           <p class="calorias">550 calorias</p>
           <div class="precio-contenedor">
-            <button class="precio">$5.000</button>
+            <button onclick="redirigirAPedir()" class="precio">$5.000</button>
           </div>
         </article>
 
@@ -54,7 +54,7 @@ $Hola = "Hola";
           <img src="./img/Desayuno1.jpg" alt="Desayuno basico" onclick="cambiarImagen('./img/Desayuno1.jpg')">
           <p class="calorias">181 calorias</p>
           <div class="precio-contenedor">
-            <button class="precio">$4.000</button>
+            <button onclick="redirigirAPedir()" class="precio">$4.000</button>
           </div>
         </article>
       </section>
@@ -67,5 +67,6 @@ $Hola = "Hola";
 
 <script src="./js/script.js"></script>
 <script src="./js/regresar.js"></script>
+<script src="./js/pedido.js"></script>
 
 </html>
