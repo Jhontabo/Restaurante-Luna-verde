@@ -1,0 +1,587 @@
+/*Fuente Rancho footer titulo luna verde*/
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*Navbar*/
+
+header {
+  text-align: center;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+}
+
+nav.navbar a{
+  display: block;
+  color: black;
+  font-weight: bold;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+nav.navbar .luna-verde{
+  display: block;
+  font-weight: bold;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 80px;
+}
+
+nav.navbar a:hover {
+  color: green;
+}
+
+
+.navbar .luna-verde {
+  color: #8bc34a; /* Color para "Luna" */
+  font-family: 'Rancho', cursive;
+
+}
+
+.navbar .luna-verde span {
+  color: #F4A261; /* Color específico para "Verde" */
+}
+
+/* Estilos para el logo (reemplaza con tu propio logo) */
+.logo {
+  float: right;
+  width: 150px; /* Ajusta esto según el tamaño de tu logo */
+  height: 150px; /* Ajusta esto según el tamaño de tu logo */
+}
+
+/*Section info*/
+
+.sobre-restaurante {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  padding-top: 50px;
+  
+  
+}
+
+.descripcion-restaurante {
+  flex-basis: 50%;
+  font-size: 30px;
+  padding: 20px;
+  margin-right: 150px;
+}
+
+.descripcion-restaurante p{
+  margin-bottom: 100px;
+}
+
+.imagenes-platos {
+  flex-basis: 50%;
+}
+
+.imagenes-platos img {
+  width: 550px; 
+  height: 320px ; /* Ajusta la altura automáticamente */
+  border: 2px solid gray; /* Borde opcional */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 5px ;
+  margin-left: 30px;
+}
+
+/* Estilos para el botón .ver-menu */
+.ver-menu {
+  background-color: #4CAF50; /* Color verde para el botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 220px;
+
+  /* Elimina cualquier margen o alineación adicional si existe */
+}
+
+.ver-menu:hover {
+  background-color: #367B37; /* Color verde más oscuro para el hover */
+}
+
+
+
+/*Section mision y vision*/
+
+.title-mision-vision h2{
+  font-size: 56px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Negrita para el título */
+  font-family: 'Rancho', cursive; /* Tipo de letra para el título */
+  margin-bottom: 0.5em; 
+  margin: 0;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+#container-mision-vision {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Separa el título y la imagen */
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+.mision-vision-title {
+  flex: 1; /* Ocupa el espacio disponible */
+  margin-right: 20px; /* Espacio entre el título y la imagen */
+}
+
+
+.mision {
+  color: #8bc34a; /* Color para 'Misión' */
+}
+
+.y {
+  color: black; /* Color para 'y' */
+}
+
+.vision {
+  color: #F4A261; /* Color para 'Visión' */
+}
+
+.descripcion-mision-vision {
+  flex: 1; /* Ocupa el espacio disponible */
+  max-width: 50%; /* Máximo ancho del texto */
+}
+
+.descripcion-mision-vision h3{
+
+  font-family: 'Rancho', cursive;
+  font-size: 46px;
+  color: #8bc34a;
+  margin-left: 40px;
+}
+
+.descripcion-mision-vision .vision{
+
+  color: #F4A261
+}
+
+.descripcion-mision-vision p {
+  font-size: 25px; /* Tamaño de fuente para los párrafos */
+  line-height: 1.6; /* Altura de línea para los párrafos */
+  color: #333; /* Color para los párrafos */
+  margin-bottom: 1em; /* Espacio debajo de los párrafos */
+  margin-left: 40px;
+}
+
+.imagenes-plato {
+  flex-basis: 50%;
+}
+
+.imagenes-plato img {
+  
+  width: 650px; 
+  height: 400px ; /* Ajusta la altura automáticamente */
+  border: 2px solid gray; /* Borde opcional */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 5px ;
+  margin-left: 130px;
+  
+}
+
+
+/*Section Menu*/
+
+.title-menu h2 {
+  font-family: 'Rancho', cursive;
+  font-size: 70px;
+  color: #8bc34a;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+
+#menu {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 90px;
+  margin-bottom: 50px;
+}
+
+
+.menu-title {
+  font-size: 36px;
+  color: #8bc34a;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.menu-item img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.boton-desayunos,
+.boton-almuerzos {
+  color: #7AB828;
+  padding: 10px 20px;
+  border: none;
+  font-size: 38px;
+  font-family: 'Rancho', cursive;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.boton-desayunos-span,
+.boton-almuerzos-span {
+  color: #F4A261;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.item-info h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.item-info p {
+  margin: 0;
+  font-size: 20px;
+  color: #666;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.item-info button {
+  background-color: #7AB828;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 20%;
+  margin-left: 30px;
+}
+
+/*Section Consumidor feliz*/
+
+
+
+.title-consumidorFeliz h2 {
+  font-size: 120px;
+  font-family: 'Rancho', cursive;
+  color: #8bc34a;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.title-consumidorFeliz .feliz {
+  color: #F4A261;
+}
+
+
+
+
+/*Imagenes de testimonios*/
+
+.testimonial-section {
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom:30px ;
+  border-radius: 20px;
+}
+
+
+.testimonial-container {
+  background-image: url('https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  display: inline-block;
+  padding: 20px;
+  margin: 0 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.testimonial-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según desees */
+  z-index: -1;
+  border-radius: 15px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #fff;
+  quotes: "“" "”" "‘" "’";
+  font-size: 30px;
+}
+
+blockquote:before,
+blockquote:after {
+  content: open-quote;
+  font-size: 50px;
+  line-height: 0;
+  color: #fff;
+  vertical-align: -0.4em;
+}
+
+.testimonial-navigation {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #7b7b7b;
+}
+
+
+
+/*Section Equipo-Cocina*/
+.equipo-de-trabajo {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+/* Estilos para los miembros del equipo */
+
+
+.title-equipoCocina {
+  font-size: 30px;
+  font-family: 'Rancho', cursive;
+  color: #8bc34a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-equipoCocina .equipo-cocina{
+  color: #F4A261;
+}
+.expertos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.miembro {
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  border-radius: 5%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.miembro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.expertos .miembro img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.miembro h3 {
+  color: #333;
+  margin: 0;
+}
+
+.miembro p {
+  color: #666;
+  margin: 5px 0 0;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .miembro {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .miembro {
+    width: 100%;
+  }
+}
+
+/*Footer*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  padding: 0px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-grid .luna-verde h2 {
+  font-family: 'Rancho', cursive;
+  font-size: 46px;
+  color: #8bc34a;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-grid .luna-verde p {
+  font-size: 12px;
+  margin-left: 30px;
+  width: 280px;
+  color: #fff;
+  text-align: justify;
+}
+
+.footer-grid .verde {
+  color: #F4A261;
+}
+
+.horarios h4{
+  color: #7AB828;
+  margin-bottom: 10px;
+}
+
+.direccion h4{
+  color: #E76F51;
+  margin-bottom: 10px;
+}
+.telefono h4 {
+  color: #F4A261;
+  margin-bottom: 10px;
+}
+
+.telefono h4 i {
+  color: #F4A261;
+  margin-right: 10px;
+}
+.horarios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horarios ul li {
+  margin-bottom: 5px;
+  font-size: 12px;
+
+}
+
+/*Redes sociales */
+
+
+/* Estilos de los íconos de las redes sociales */
+.redes-sociales a {
+  color: #ffffff;
+  font-size: 30px;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out; /* Efecto de transición en el color */
+  margin-left: 20px;
+}
+
+/* Efecto hover en los íconos de las redes sociales */
+.redes-sociales a:hover {
+  color: #7AB828; /* Cambia el color del ícono al pasar el cursor por encima */
+  transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el cursor por encima */
+}
+
+/* Animación para los íconos de las redes sociales */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.redes-sociales a {
+  animation: bounce 1s infinite; /* Animación que se repite infinitamente */
+}
+.creditos {
+  padding: 0px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 0PX;
+  
+}
+
+.creditos p {
+  margin: 0;
+  padding: 0;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}

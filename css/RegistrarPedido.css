@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://www.wanderluluu.com/wp-content/uploads/2021/05/130226_06764_004_LMP-1536x1024.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.registro-container {
+    width: 400px; 
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registro-container h2 {
+    font-family: 'Rancho', cursive;
+    color: #28a745;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.registro-container input,
+.registro-container select {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.registro-container .btn-registrar,
+.registro-container .btn-salir {
+    width: 50%; 
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #28a745; 
+    color: white;
+    box-shadow: 0px 6px #1d5c2f; 
+    transition: all 0.3s ease; 
+}
+
+.registro-container .btn-salir {
+    background-color: #d9534f; 
+    box-shadow: 0px 6px #a12f21; 
+}
+
+.registro-container .btn-registrar:hover,
+.registro-container .btn-salir:hover {
+    box-shadow: 0px 4px #1d5c2f; 
+}
+
+.registro-container .btn-registrar:active,
+.registro-container .btn-salir:active {
+    transform: translateY(4px); 
+    box-shadow: 0px 2px #1d5c2f; 
+}

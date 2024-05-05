@@ -7,162 +7,299 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="Pagina de pedidos para el restaurante luna verde">
+    <meta name="author" content="Jhontabo">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Restaurante Luna verde</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/business-casual.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-	
-	<?php
-		$Username = null;
-		if(!empty($_SESSION["Username"]))
-		{
-			$Username = $_SESSION["Username"];
-		}
-	?>
+
+    <?php
+    $Username = null;
+    if (!empty($_SESSION["Username"])) {
+        $Username = $_SESSION["Username"];
+    }
+    ?>
 </head>
 
 <body>
-    <div class="brand">Entregas Luna verde</div>
-    <div class="address-bar">Directo y a la Puerta de tu Casa</div>
 
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Entregas ConfiguroWeb</a>
-            </div>
+    <header>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#container-mision-vision">Nosotros </a>
+            <span class="luna-verde">Luna <span>Verde</span></span>
+            <a href="#menu">Menú</a>
+            <a href="./Board.php">Dashboard</a>
+            <div class="logo"><img src="./img/logoLunaVerde.png" alt="Logo" class="logo"></div>
+        </nav>
+    </header>
 
+<<<<<<< HEAD
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Inicio</a></li>
                     <li><a href="/view/about.php">Nosotros</a></li>
 					<li><a href="#" onclick="ManagementOnclick();">Administrador</a><li>
+=======
+    <section class="sobre-restaurante">
+        <div class="descripcion-restaurante">
+            <p>El restaurante "Luna Verde" es un restaurante familiar donde se sirve comida casera dentro de un
+                establecimiento y también hace entregas a domicilio. El restaurante se encuentra ubicado en el barrio
+                San Ignacio en la ciudad de Pasto. Hace parte del sector privado colombiano y funciona hace más de 18
+                años.</p>
+>>>>>>> main
 
-					<?php if($Username == null){echo '<li><a href="register.php?ActionType=Register">Registrarse</a></li>';} ?>
-                    <?php if($Username != null){echo '<li><a href="ManageAccount.php?Role=User">Cuenta</a></li>';} ?> 
-					<?php if($Username == null){echo '<li><a href="Login.php?Role=User">Ingresar</a></li>';} else {echo '<li><a href="Logout.php">Logout</a></li>';} ?>
-                </ul>
-            </div>
+            <button class="ver-menu" onclick="desplazarseAMenu()">Ver Menú</button>
         </div>
-    </nav>
+        <div class="imagenes-platos">
+            <img src="./img/platoSectionSobre.jpg" alt="Plato 1">
+            <img src="./img/caldoDeCostilla.jpg" alt="Plato 2">
+        </div>
+    </section>
 
-    <div class="container">
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        </ol>
+    <div class="title-mision-vision">
+        <h2>
+            <span class="mision">Misión</span>
+            <span class="y">y</span>
+            <span class="vision">Visión</span>
+        </h2>
+    </div>
 
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
-                            </div>
-							<div class="item">
-                                <img class="img-responsive img-full" src="img/slide-4.jpg" alt="">
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
+    <section id="container-mision-vision">
+        <div class="descripcion-mision-vision">
+            <h3>Misión</h3>
+            <p>El restaurante es una empresa familiar colombiana dedicada a la preparación de comida casera, con un
+                enfoque centrado en la satisfacción del cliente y el constante mejoramiento de sus procesos.</p>
+
+            <h3 class="vision">Visión</h3>
+            <p>Visión del restaurante: Para el año 2025, el restaurante tiene previsto la implementación de nuevas
+                tecnologías con el fin de automatizar y simplificar algunas tareas que actualmente demandan mucho tiempo
+                a las propietarias de la empresa. Además, se ofrecerá a los clientes la posibilidad de realizar sus
+                pedidos de manera sencilla a través de una plataforma digital.</p>
+        </div>
+        <div class="imagenes-plato vision-mision">
+            <img src="https://s3-alpha-sig.figma.com/img/4cc2/7d9d/8079ace02f711626f24fb08c91742200?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m1Lnq27H4uLNrASvLokmq3HWATyo7ofjldXC9DoBwikn9~ZPOrRjtSrh7PVQ1NLJjm0hIX5eGZhw~IRerxbiCn7WfQKvgWr3lQW0whvGf064YKHWlcb9mSYNeHAdL7zHceN2ix-Omn-7oI67L8ogvqig6oND9MXUCEckja-a0YhezR6nKm7RZHkWONRhBM9A6kMjKtH1mnDJLFTExaPh18BsOGos2Ypv7g0c7gkbEo0jg0lY0VSINlKuyOH52wV2YhxAQADNXlPuaDziN7MpcE2o2YZ~nnkxov9df6B7AQEZCXf~fSLlLW~Fhm6GXXh4E70jKXp~xuUVxTNV2UWM1w__"
+                alt="Plato 1">
+        </div>
+    </section>
+
+
+
+    <div class="title-menu">
+        <h2>Menu</h2>
+    </div>
+    <section id="menu">
+        <div class="menu-container">
+            <div class="menu-column">
+                <button class="boton-desayunos" onclick="redirigirADesayunos()">
+                    <span>Desa</span><span class="boton-desayunos-span">yunos</span>
+                </button>
+                <div class="menu-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/7790/1b3e/51303a79b3c9fafda46ad3a29e59e745?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EkIrGCIQSSouKfmSLQXjalpxy3xK7OmylUWBxDBbSNoP5xUrEuqVralRGO9rP94DvnJPBTm7kI5XGPD4HuRYTHwPDSXC46F1r0INLEHnPsO-~53wdqnwzpC9Tf2kcgMqxkSxsGGy8Qp4g2yLDqKLCcFjoehOsCE8i3IKQqKj~S8jkeE5A6fG7pFxQRRIfVBOOZiYSAI1Cry4RgR36fOTwn1Xo-SH6hEF1je6sevCN3odlLefffUMyTc5wIBYjS5GclDaSuqQ-NXVSUe4gypGJT3Lw1jHHupdB91TJIuYQK4qHvhHJwuGCwwcBFM20Lioj273vH9MCJFScJN7HvXYow__"
+                        alt="Desayuno completo">
+                    <div class="item-info">
+                        <h4>Desayuno completo</h4>
+                        <p>$7.500</p>
+                        <p>Incluye huevo,arroz carne,tajas y ensalada, tambien incluye bebida
+                            caliente como cafe.</p>
+                        <button onclick="redirigirAPedir()">Pedir</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/fe22/7f8b/0eb5c105df5540ec0925958e4c552ec0?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AXDx9X-ux~tnlvEOx3BqUNl-ntL0QAeU8QWdgRJhJRFZWnAupSnF3cszQmdDJHbWIkZzwjdu-kvrllSHuhqeyhqbctZYsHKR2Yl7Cle9Wq0WGUoh6ai~u-4yMxeucv8zbDhnyZGkJOYeyYSL6XMcKdIMd~gxceqVPpPECJO10hp5o6hJ0kMWNSlxRfSxHIqupjAX8ewN6z1gIzNWdH5U4AncLSrEPsV9Ibf1Wk4XlWc6jZiVzm2cpKbb6s~0Go5Tmd0~RQsS6C1KxD6iNmAWZRz8IVnzia8ZCWje2jDcUPONadJ5kyPEfz3kD~EUHtwqCasatDpCMLbvoIXvoqrLfg__"
+                        alt="Desayuno intermedio">
+                    <div class="item-info">
+                        <h4>Desayuno intermedio</h4>
+                        <p>$5.000</p>
+                        <p>Incluye huevo,arroz y tajas, tambien incluye bebida caliente como cafe.</p>
+                        <button onclick="redirigirAPedir()">Pedir</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/015a/dc9f/22748aed26a4c461f04668909941b80d?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gpog~nUlMpxxP0Gbh~RkHT5~yI3d5QsMMRxwnGQceu8Opv0Ce-vdSYIg564SgODwZAT5-VTnj0sXobhlymzuZ6cbsSb5kqJo5brtigD6tw~Hkmax5z5AEOWCxV9FJ4aegGsv-5Rv2QX3tUGH7Sam~-v5Uy3oDJzqcBjv6mCnsvDaYCzzNVATZDjYmH6tzqdmQkAsDSCfKqBmnBdyWGkrzmghhzOXSTK4R6QRvyx01f5qqq1zNaoc5a0Dm~NWW7PeALXtqkUFQeyAJTFwNA8cOXUjv7yR2qj8VUOuuVDoqGEkFvlz~2pXiuHui93HvYwuLo6~0QJ6Ophgp~ctds-51g__"
+                        alt="Desayuno básico">
+                    <div class="item-info">
+                        <h4>Desayuno básico</h4>
+                        <p>$4.000</p>
+                        <p>Incluye huevo,arroz y tajas</p>
+                        <button onclick="redirigirAPedir()">Pedir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <button class="boton-almuerzos" onclick="redirigirAAlmuerzos()">
+                    <span class="boton-almuerzos-span">Almu</span>erzos
+                </button>
+                <div class="menu-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/fa2f/8982/5d699a5d1965aa5b16dc720c7fc9bd15?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DF4xwNJFYqWJitHHbtHVeJ26sF4cyjhV5VcQl1FtK8cjRbfYhmoSAUGH-pzCR-RjkVdVxNJp0~8JaY8hYKp5QaCzYnX3ImPMB3vSkX6RqH~mFUZ-dXu0DcD7UHsup0-B63Or0b~vM40JedHwf6AUqh21gUwSe2qCsVlKShiXxhV3QXIUm~yu0xizdCpPKEVvTImW278s~G1ORAUXZcBkMxr0QRtrWRFDgDqxt2Y6Zu9sMre0U3fm6LrXZVbgrApSo0raojvOvrBRRix8i9aNagRTzQMto-~HTVo2OXIsXOSOyX9Q6Gj0eRG0Knl4-NfvzcvJrQ7DzgIJfGpyL53jLw__"
+                        alt="Sopa del día">
+                    <div class="item-info">
+                        <h4>Sopa del día</h4>
+                        <p>$4.000</p>
+                        <p>Incluye unicamente sopa del dia.</p>
+                        <button onclick="redirigirAPedir()">Pedir</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/a48b/1a15/8dc1ad06f9428044dc7ecbbd53fd695d?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EERJAeuSg6x3jsgi-kR98HmMFmIQHMr66GIDjA5Dq2pnL~Q0g~YC97WJRV4ykiYpPqlm2XyLwhJSw~EN~c1iQBnl6T8JghZXg4vGPox2DSSCYdlb9cTWOODeVxWE6OpB--bkYcWbCuPAfDQGUyoM2h-hhsq8AB7gPHmnZciR-kUclWyrl2fb-lJ2LGs0c~VkW5LQK5l7A2Q8M0bQPa5bzDETkoBrNG~OOtkCit1fwIqqgZt-hbWIEC-0YX5mlYF~LdkJaTHkHQStz8E~b6vJwQeOpYaEw~dnDBWob6kJABUVyw4nEFNMBXMueE7VzHaqpbkUFk4mFhFye9ffKfVOew__"
+                        alt="Bandeja">
+                    <div class="item-info">
+                        <h4>Bandeja</h4>
+                        <p>$8.500</p>
+                        <p>Incluye arroz,carne, tajas, principio y ensalada, tambien incluye jugo y postre.</p>
+                        <button onclick="redirigirAPedir()">Pedir</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/a8ba/ab77/8b0c7925e67ae91a311e7d12f27a2cf2?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ST9vl1j2RMP6VspwwQFpcbtNTKsKgaQSV1EWIiNZcAa1EJIphoV1v3AV6o4ZzmoPYG-L7CuzsKc2D6lDQu~TIYfKare9cDx7zOVW9vEejpQnVl-rpn9tAhPeV41RwggHMI49wFk02Psr3d1n7YXUs1RaotfAVo9n9pyAPbKdM8KV6-NNWpTZCTh-5NJK1mNK9B09VaB6esaOh3NKZJU2bE7b2RHJELxQQp2YdYXS8R8qlS2HGl6A~1bmaDGxB-VwchPiD49N1TlSXl3AlQpunsXvvlCDf0PIphd4DzculGq8s24JqbzaEwA3HPhSRgCFvNztGfi1LfXwNsjXJQLLOQ__"
+                        alt="Almuerzo completo">
+                    <div class="item-info">
+                        <h4>Almuerzo completo</h4>
+                        <p>$10.00</p>
+                        <p>Incluye sopa y bandeja.</p>
+                        <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
             </div>
         </div>
-		
-		<?php 
-			$conn = mysqli_connect("localhost","root","","smss_db");
-			$sql = "SELECT * FROM `tbl_products` Limit 100";
-			$Resulta = mysqli_query($conn,$sql);
-		?>
-		
-		
-		<?php while($Rows = mysqli_fetch_array($Resulta)){
-		echo '	
-		<div class="col-sm-4 col-lg-4 col-md-4">
-             <div class="thumbnail">
-				<h4 style="text-align: center;">'.$Rows[2].'</h4>
-                <img style="border: 2px solid gray; border-radius: 10px; height: 229px; width: 298px;" src="data:image;base64,'.$Rows[8].'" alt="">
-                <div class="caption">
-					<p><strong>Nombre del Producto:</strong> '.$Rows[1].'</p>
-					<p><strong>Dimensiones:</strong> '.$Rows[3].'</p>
-					<p><strong>Colores Disponibles:</strong> '.$Rows[4].'</p>
-					<p><strong>$ '.$Rows[5].'.00</strong></p>
-                </div>
-				<center><a onclick="addToCartOnclick('.$Rows[0].');" href="#"  style="margin-bottom: 5px;" class="btn btn-primary">Agregar al Carrito</a></center>
+    </section>
+
+    <div class="title-consumidorFeliz">
+        <h2>Eslo<spanc class="feliz">gan</spanc>
+        </h2>
+    </div>
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <blockquote>
+                "Sumérgete en la auténtica tradición culinaria con nuestro delicioso sabor casero, cuidadosamente
+                elaborado para brindarte una experiencia gastronómica reconfortante y llena de nostalgia. En cada
+                bocado, encontrarás la esencia de los sabores familiares, preparados con pasión y dedicación, como si
+                estuvieras disfrutando de una comida en casa."
+            </blockquote>
+            <div class="testimonial-navigation">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </div>
-		';
-		}?>
-		
-	</div>
+    </section>
+
+    <div class="title-equipoCocina">
+        <h2>Equipo d<span class="equipo-cocina">e Trabajo</span> </h2>
+    </div>
+    <section class="equipo-de-trabajo">
+        <div class="expertos">
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/7e63/efc8/af7856cf4fa3b1251a33656b6c0aefaf?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z9DzKHWcXX4sNTzPKpLjQHiXwimj0J3RoU99uwl6VDu4H~I3INgUAA-tOXQTCg4~JVdTg1GixOn1HYkegY2R2VDXV5WIXPKhBOM2uI1eXwuZVMjZUwC8~izJlqYSGtnn5Q5crY8hSx91870v9ko24FUjZnsC~4nb~S7cbwHLB335R-oLcIr9Ok1L5T5Yc3j1fsZHzU4eYZPpeJ-QwMpQ0d9k~~uZTA2men0L9mgiqfOEleR-0YoAlUZq5VAo-vFw2jwEwo80rJyq~t8c9w2-IH1x5lVY27mdZiWmU3bxAbN046Yrm~3GJrSC1PihOwSUppHFf4AqxUeEsa8HLd6rTQ__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Rodrigo Russo</h3>
+                <p>Chef</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/fc09/4d17/853b0f76f78c459eacde6f5a72c9efc4?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OJ0JqGqu8B0A7DsE4zQPXhtuhN34Gy4nNNqTHjm6gL2pidA~bvKOdfml5zgRQDQ9X7i43RUyfts26FGsgPOw~NPmMuxUzWI5jpb3LOlJx4xi1OzhFZVUCGqBNkgdyZBm8WBPn6rm71h-790qjbTPIzr~aP7xxy3qH4Mjv5YLo2MVKgWhhii~fUU6egWStP0aq768l-7BjvrHj7hF9GeXgP86WGs-C95NCvLzFW44OjRn~Z0R6YwQuZM-VdtaL-GN5ZOiApB-M0RmZkzoO8499lGgTysWLba95wvi~v~U6UUfvwYlPurvJKQzJPo8OexixnposurXNbZ4B~dAupMhUw__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Antonio Martinez</h3>
+                <p>Asistente de cocina</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/71fe/6e1b/454ab8ba1e7a4738533829b547c347b1?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z2bBfP5SC1G4xWOOHdUcBEQk40cUEX48o5FgI7fIuVDpl28VoAQO6Bk1Jw9SZDKmfj1F0IKFSaxhsK8m3EYw~H12FOaoXtK7HdcbtRc8fCAH2Nl1s-qpqsFY0s-90t77jXT64MFqlan2PhLzY55ve5CTeJhMCoBSt6Z~7aPFPuL9KU4WC53jd9XShBcQYVo7bfsivpwkAQUoW0nb5tSLzoudhrJguhHK100ytKAfVKexYbSCgj8xFAi8naUnNcuEbXgHzAqG7W-WtyFfwqHq3iIEYIyH9VpwFuX43tQVgvM7vYhtM6l409NtlE~plMzFxCug0pCfa7ukmLif0UEcdQ__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Sofia Muñoz</h3>
+                <p>Contadora</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/56b5/b796/af53f19d05321b9be7ade1955b01f2bb?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TCOkHUdUY8nN1kUaXZhJ-7t15L8goOccFGoLR1XHuorHh0RU59M9egnGqa6wjgIy34k~QMPENXnw-xo~HwMKPi~To54b0P3EvAk5Kas7VVZmzZdTXMAehYOHJlvTzF5O6YZXvCDyr1d4xlcgQx1vR6CgsGT6KaEykvP2T9I4Ro-yrD4i9a0KRX5FJ2OpoG3v4dA-jZxqeF~Uub4b4uNx2AVCbCOOsNsfOIa3AqlnWjstI5GjvMv0-mr08t8hQV4fSx9iDLYHXV0feic6ePMp8ewK74h3ZEfzrZuTUwBdRKflHHeHsoIEAeNJTrSHNmWdgZLO--tVojzr1cHGZux~HA__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Paula portilla</h3>
+                <p>Mesera</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/d225/512e/9ec323457e9afdf6b221b3f605df937f?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C81TWwdFh3jXsOyTajeiBujq2XInXGfgvxWy6BJ5wHEBxVxHLJ4sCJPwkMRBgsIl--TEaRn2jbbiyWmP2SbeZtcIaK87ioZ~RO9-4cSHAqM~YFsq8Vq5LmcDnUfdBHmdwUcyZPYM7hi89QFAl7S5b30zrJNGzVml4iZyjMmqxsxTRmGdzj-72G6d825bfx3aKyvRHERCgZiLauOI~zQSFbEf92It-nndhdALqxyqaaiVVPjERE0GEI6JE1RNR9V9Lc-zsJGHv0njN6XEkhScDmqnzJJ5swOCBvCNN22gSbw57cGp3NN~C5ey-MYl~0EWU-t8dH298laDx15xF5FBYA__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Sebastian Jurado</h3>
+                <p>Abogado</p>
+            </div>
+
+            <div class="miembro">
+                <img src="https://s3-alpha-sig.figma.com/img/0d26/dac7/c64dd07376f160154b72d0eee439e65f?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bOssJCQfyU58HQUxKKX1M3t4VFp8RvkogWPaqFlebfrDJD3Y5O8HkRzctU2aWZkAOSBwEpSiU8v8ayiVejUDNhiY-wsdzDF-2KrSHILZ2YM3EA2rq9o-GGDQRXIS8oAYZNn3WmPUHDDAOJmq1qi8FnItWQGYYWrWimp27d3OeKGm3PqNUhoGfWPvgRl2TKgbB5BKdk3rg~ITG6oHiYS1fW~mbO2GWPuBgdJcdhN0YDETBXseBG6hRXbbAQu9ohBsVPxlADWhF8JRknvs-No0~Hg0RoaQfQHP~TY7Gpfs6sUTaIcO9ezhlDDJu0idMmF3XvrcZERMn1YRRT~yuImygQ__"
+                    alt="Rodrigo Russo, Chef">
+                <h3>Natalia Villota</h3>
+                <p>Proveedora</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
+            <div class="footer-grid">
+                <div class="luna-verde">
+                    <h2>Luna <span class="verde">verde</span></h2>
                     <p>
-					<?php echo '<strong>'.$Username.'</strong>'; ?>
-					<br>
-					<strong> 
-					<?php if($Username == null){echo '<a href="Login.php?Role=User">Ingresar</a>';} else {echo '<a href="Logout.php">Logout</a>';} ?> | 
-					<a href="#">Volver al inicio</a>
-					</strong><br>
-					Copyright &copy; ConfiguroWeb
-					</p>
-					
+                        Sumérgete en la auténtica tradición culinaria con nuestro delicioso
+                        sabor casero, cuidadosamente elaborado para brindarte una experiencia
+                        gastronómica reconfortante y llena de nostalgia. En cada bocado, encontrarás la esencia
+                        de los sabores familiares, preparados con pasión y dedicación, como si estuvieras
+                        disfrutando de una comida en casa.</p>
+                    <p class="copyright">2009 - 2024</p>
+
+                    <div class="redes-sociales">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                        <a href="https://twitter.com/JhonseTabo" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Jhontabo/Restaurante-Luna-verde" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <ul>
+                        <ul>
+                            <li>Lunes</li>
+                            <li>7:00 AM - 6:00 PM</li>
+                            <li>Martes</li>
+                            <li>7:00 AM - 6:00 PM</li>
+                            <li>Miércoles</li>
+                            <li>7:00 AM - 6:00 PM</li>
+                            <li>Jueves</li>
+                            <li>7:00 AM - 6:00 PM</li>
+                            <li>Viernes</li>
+                            <li>7:00 AM - 6:00 PM</li>
+                            <li>Sábado</li>
+                            <li>7:00 AM - 3:00 PM</li>
+                            <li>Domingo</li>
+                            <li>CERRADO</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="direccion-telefono">
+                    <div class="direccion">
+                        <h4>Direccion</h4>
+                        <p>Dirección: Cra 34 #14-12, Pasto, Nariño</p>
+                        <div class="mapa">
+                            <!-- Aquí iría el código para insertar el mapa -->
+                        </div>
+                    </div>
+                    <div class="telefono">
+                        <h4><i class="fas fa-phone"></i>Telefono</h4>
+                        <p>+57 300 208 1134</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="creditos">
+            <p>2022 - Diseñado por Juan Jose Pachajoa - Daniel Luna - Sara Valentina Macuace - Jhon Tajumbina - Cristian
+                Ortega</p>
+        </div>
     </footer>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-		$('.carousel').carousel({
-			interval: 5000 //changes the speed
-		})
-		
-		$('#reg').click(function(){
-			window.open('register.html',_self);
-		});
-		
-		function ManagementOnclick(){
-			if(confirm("Solo los administradores tienen permitido acceder a esta página. Inicie sesión como administrador.") == true)
-			{
-				window.open("Login.php?Role=Admin","_self",null,true);
-			}
-		}
-		
-		function addToCartOnclick(ProductID)
-		{	
-			if(confirm("Estas seguro que deseas agregar este producto al carrito") == true){
-			window.open("Order.php?ProductID="+ProductID,"_self",null,true);
-			}
-		}
-    </script>
 </body>
+
+<script src="./js/script.js"></script>
+<script src="./js/Menu.js"></script>
+<script src="./js/admin.js"></script>
+<script src="./js/pedido.js"></script>
 
 </html>

@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('https://media-cdn.tripadvisor.com/media/photo-s/06/9e/2e/04/cafe-colombia-en-peru.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  width: 400px;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.login-title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Rancho';
+  color: #28a745;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-container input {
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn, .btn-salir {
+  width: calc(50% - 20px); 
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px #196f3d;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.login-btn {
+  background-color: #28a745;
+}
+
+.login-btn:hover {
+  background-color: #218838;
+  box-shadow: 0 2px #196f3d;
+}
+
+.login-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px #196f3d;
+}
+
+.btn-salir {
+  background-color: #d9534f;
+  box-shadow: 0 5px #a12f21;
+  position: fixed; 
+  bottom: 10px;
+  right: 10px;
+  width: auto; 
+}
+
+.btn-salir:hover {
+  background-color: #c9302c;
+  box-shadow: 0 2px #a12f21;
+}
+
+.btn-salir:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px #a12f21;
+}
