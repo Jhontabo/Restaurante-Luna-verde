@@ -34,20 +34,12 @@
         </nav>
     </header>
 
-<<<<<<< HEAD
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="/view/about.php">Nosotros</a></li>
-					<li><a href="#" onclick="ManagementOnclick();">Administrador</a><li>
-=======
     <section class="sobre-restaurante">
         <div class="descripcion-restaurante">
             <p>El restaurante "Luna Verde" es un restaurante familiar donde se sirve comida casera dentro de un
                 establecimiento y también hace entregas a domicilio. El restaurante se encuentra ubicado en el barrio
                 San Ignacio en la ciudad de Pasto. Hace parte del sector privado colombiano y funciona hace más de 18
                 años.</p>
->>>>>>> main
 
             <button class="ver-menu" onclick="desplazarseAMenu()">Ver Menú</button>
         </div>
