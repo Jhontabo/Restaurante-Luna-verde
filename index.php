@@ -29,7 +29,7 @@
             <a href="#container-mision-vision">Nosotros </a>
             <span class="luna-verde">Luna <span>Verde</span></span>
             <a href="#menu">Menú</a>
-            <a href="./Board.php">Dashboard</a>
+            <a href="./admin.php">Administrador</a>
             <div class="logo"><img src="./img/logoLunaVerde.png" alt="Logo" class="logo"></div>
         </nav>
     </header>
@@ -239,10 +239,8 @@
                     <p class="copyright">2009 - 2024</p>
 
                     <div class="redes-sociales">
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=573164292376&text=Si%20tienes%20una%20duda%20puedes%20mandarnos%20un%20mensaje" target="_blank"class="whatsapp"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-facebook-f" target="_blank"></i></a>
-                        <a href="https://twitter.com/JhonseTabo" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="https://github.com/Jhontabo/Restaurante-Luna-verde" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
@@ -291,7 +289,6 @@
 
 <script src="./js/script.js"></script>
 <script src="./js/Menu.js"></script>
-<script src="./js/admin.js"></script>
 <script src="./js/pedido.js"></script>
 
 </html>
