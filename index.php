@@ -240,7 +240,7 @@
 
                     <div class="redes-sociales">
                         <a href="https://api.whatsapp.com/send?phone=573164292376&text=Si%20tienes%20una%20duda%20puedes%20mandarnos%20un%20mensaje" target="_blank"class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                        <a href="https://www.facebook.com/people/Luna-verde/61558107166473/" target="_blank"><i class="fab fa-facebook-f" target="_blank"></i></a>
                         <a href="https://github.com/Jhontabo/Restaurante-Luna-verde" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>

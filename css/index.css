@@ -60,6 +60,24 @@ nav.navbar a:hover {
   height: 150px; /* Ajusta esto según el tamaño de tu logo */
 }
 
+/*Medida para dispositivos mobiles */
+
+@media (max-width: 768px) {
+  nav.navbar {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  nav.navbar a {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  nav.navbar .luna-verde {
+    font-size: 60px;
+  }
+}
+
 /*Section info*/
 
 .sobre-restaurante {
@@ -96,6 +114,7 @@ nav.navbar a:hover {
   margin-left: 30px;
 }
 
+
 /* Estilos para el botón .ver-menu */
 .ver-menu {
   background-color: #4CAF50; /* Color verde para el botón */
@@ -113,6 +132,30 @@ nav.navbar a:hover {
 .ver-menu:hover {
   background-color: #367B37; /* Color verde más oscuro para el hover */
 }
+
+/*Para dispositivos mobiles */
+
+@media (max-width: 768px) {
+  .sobre-restaurante {
+    flex-direction: column;
+  }
+
+  .descripcion-restaurante {
+    margin-right: 0;
+    font-size: 24px;
+  }
+
+  .imagenes-platos img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .ver-menu {
+    margin-left: 0;
+  }
+}
+
 
 
 
@@ -197,6 +240,25 @@ nav.navbar a:hover {
   margin-bottom: 5px ;
   margin-left: 130px;
   
+}
+
+
+/*Para dispositivos mobiles */
+
+@media (max-width: 768px) {
+  #container-mision-vision {
+    flex-direction: column;
+  }
+
+  .descripcion-mision-vision {
+    max-width: 100%;
+  }
+
+  .imagenes-plato img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
 }
 
 
@@ -298,6 +360,17 @@ nav.navbar a:hover {
   margin-left: 30px;
 }
 
+/*Para dispositivos mobiles */
+
+@media (max-width: 768px) {
+  .menu-container {
+    margin-left: 0;
+  }
+
+  .item-info p {
+    width: auto;
+  }
+}
 /*Section Consumidor feliz*/
 
 
@@ -387,6 +460,14 @@ blockquote:after {
 .dot.active,
 .dot:hover {
   background-color: #7b7b7b;
+}
+
+/*Para dispositivos mobiles */
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    margin: 0;
+  }
 }
 
 
@@ -538,12 +619,16 @@ footer {
 
 
 /* Estilos de los íconos de las redes sociales */
+
+.redes-sociales  {
+  margin-left: 30px;
+}
+
 .redes-sociales a {
   color: #ffffff;
-  font-size: 30px;
-  margin-right: 10px;
-  transition: color 0.3s ease-in-out; /* Efecto de transición en el color */
-  margin-left: 20px;
+  font-size: 25px;
+  transition: color 0.3s ease-in-out;
+  margin-right: 20px;
 }
 
 /* Efecto hover en los íconos de las redes sociales */
@@ -584,4 +669,11 @@ footer {
 .copyright {
   margin-top: 20px;
   font-size: 14px;
+}
+/*Para dispositivos mobiles */
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 }
