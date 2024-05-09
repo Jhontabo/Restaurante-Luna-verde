@@ -57,7 +57,7 @@ $Hola = "Hola";
 </body>
 
 <script src="./js/script.js"></script>
-<script src="./js/regresar.js"></script>
+<script src="./js/redireciones.js"></script>
 <script src="./js/pedido.js"></script>
 
 </html>

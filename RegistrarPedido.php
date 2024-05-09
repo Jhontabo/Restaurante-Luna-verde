@@ -17,8 +17,8 @@
       <input type="tel"  placeholder="Teléfono" required>
       <input type="number" placeholder="Cantidad" required>
 
-      <div class="forma-pago">
-        <h2>Forma de pago</h2>
+      <h2>Forma de pago</h2>
+      <div class="container-forma-pago">
         <select name="forma-pago">
           <option value="tiquetera">Tiquetera</option>
           <option value="efectivo">Efectivo</option>

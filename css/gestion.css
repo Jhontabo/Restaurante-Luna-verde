@@ -1,58 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6e6e6;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.fas {
+  color: #333;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.fas:hover {
+  color: #666;
+}
+
+/* Media queries para hacer el diseño responsive y usable */
+
+@media (max-width: 768px) {
   table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
   }
-  
+
   th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    padding: 6px 8px;
   }
-  
-  th {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #e6e6e6;
-  }
-  
+
   button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 16px;
-    margin: 4px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
+    padding: 4px 8px;
+    font-size: 14px;
   }
 
   .fas {
-    color: #333;
-    cursor: pointer;
-    margin: 0 5px;
+    font-size: 16px;
   }
-  
-  .fas:hover {
-    color: #666;
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 12px;
   }
+
+  th, td {
+    padding: 4px 6px;
+  }
+
+  button {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+
+  .fas {
+    font-size: 14px;
+  }
+}
