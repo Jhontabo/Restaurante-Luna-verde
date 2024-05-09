@@ -120,6 +120,7 @@
 
     <div class="title-menu">
         <h2>Menu</h2>
+        
     </div>
     <section id="menu">
         <div class="menu-container">
@@ -168,6 +169,7 @@
                         <button onclick="redirigirAPedir()">Pedir</button>
                     </div>
                 </div>
+                
                 <div class="menu-item">
                     <img src="https://s3-alpha-sig.figma.com/img/a48b/1a15/8dc1ad06f9428044dc7ecbbd53fd695d?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EERJAeuSg6x3jsgi-kR98HmMFmIQHMr66GIDjA5Dq2pnL~Q0g~YC97WJRV4ykiYpPqlm2XyLwhJSw~EN~c1iQBnl6T8JghZXg4vGPox2DSSCYdlb9cTWOODeVxWE6OpB--bkYcWbCuPAfDQGUyoM2h-hhsq8AB7gPHmnZciR-kUclWyrl2fb-lJ2LGs0c~VkW5LQK5l7A2Q8M0bQPa5bzDETkoBrNG~OOtkCit1fwIqqgZt-hbWIEC-0YX5mlYF~LdkJaTHkHQStz8E~b6vJwQeOpYaEw~dnDBWob6kJABUVyw4nEFNMBXMueE7VzHaqpbkUFk4mFhFye9ffKfVOew__"
                         alt="Bandeja">
@@ -266,8 +268,8 @@
                     <p class="copyright">2006 - 2024</p>
 
                     <div class="redes-sociales">
-                        <a href="https://api.whatsapp.com/send?phone=573164292376&text=Si%20tienes%20una%20duda%20puedes%20mandarnos%20un%20mensaje" target="_blank" target="_blank"class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://web.facebook.com/people/Luna-verde/61558107166473/?_rdc=1&_rdr"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=573164292376&text=Si%20tienes%20una%20duda%20puedes%20mandarnos%20un%20mensaje" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://web.facebook.com/people/Luna-verde/61558107166473/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f" target="_blank"></i></a>
                         <a href="https://github.com/Jhontabo/Restaurante-Luna-verde" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>

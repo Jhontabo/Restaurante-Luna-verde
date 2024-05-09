@@ -11,12 +11,6 @@
 
 </head>
 
-<?php
-
-$Hola = "Hola";
-
-?>
-
 <body>
 
     <header class="cabecera">

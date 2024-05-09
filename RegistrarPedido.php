@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
   <link rel="stylesheet" href="./css/RegistrarPedido.css">
 </head>
+
 <body>
   <div class="registro-container">
     <h2>Registrar Pedido</h2>

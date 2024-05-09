@@ -1,19 +1,18 @@
-
-body{
-  margin: 0%;
-  padding: 0%;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .cabecera {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1vh 2vh;
+  padding: 1vh 2vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
 }
 
 .titulo {
-  font-size: 6vh;
-  margin: 0 10%;
+  font-size: 6vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
+  margin: 0 5%;
   align-self: center;
   font-family: 'Rancho', cursive;
 }
@@ -27,8 +26,8 @@ body{
 }
 
 .logo {
-  width: 15vh;
-  margin: 0 13%;
+  width: 15vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
+  margin: 0 5%;
   align-self: center;
   margin-top: 20px;
 }
@@ -50,78 +49,91 @@ body{
 }
 
 .circulo-central {
-  width: 40vh;
-  height: 40vh;
+  width: 80vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
+  height: 80vw;
   border-radius: 50%;
-  transition: transform 0.3s ease; /* Agrega una transición de transformación */
+  transition: transform 0.3s ease;
+  max-width: 400px; /* Establece un tamaño máximo para evitar que la imagen se haga demasiado grande */
+  max-height: 400px;
 }
 
 .circulo-central:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+  transform: scale(1.1);
 }
 
 .opciones-desayuno {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+  justify-content: center;
   width: 100%;
   margin-top: 2vh;
-  
 }
 
-.desayuno{
+.desayuno {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1vw; /* Ajusta el margen lateral para separar los elementos */
 }
+
 .desayuno img {
-  width: 20vh;
-  height: 20vh;
+  width: 40vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
+  height: 40vw;
   border-radius: 50%;
   margin: 1vh;
-  transition: transform 0.3s ease; /* Agrega una transición de transformación */
+  transition: transform 0.3s ease;
+  max-width: 200px; /* Establece un tamaño máximo para evitar que la imagen se haga demasiado grande */
+  max-height: 200px;
 }
 
 .desayuno img:hover {
-  transform: scale(1.2); /* Escala la imagen al 120% de su tamaño original */
+  transform: scale(1.2);
 }
 
-
-.precio  {
+.precio {
   background-color: #28a745;
   border: none;
-  padding: 1vh 2vh;
+  padding: 1vh 2vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
   color: white;
   cursor: pointer;
-  font-size: 1.5vh;
+  font-size: 3vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
   font-weight: bold;
   box-shadow: 0 0.5vh #068120;
   border-radius: 30px;
-  
 }
-
-
 
 .calorias {
   color: #888;
-  font-size: 1.5vh;
+  font-size: 3vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
   margin-top: 1vh;
   text-align: center;
 }
 
 .pie-pagina {
-  text-align: center; 
-  margin-top: 30px; 
+  text-align: center;
+  margin-top: 30px;
 }
 
 .boton-salir {
   background-color: #f72f07;
   border: none;
-  padding: 10px;
+  padding: 2vw 4vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
   color: white;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: bold; 
-  box-shadow: 0 1vh #050605; 
+  font-size: 4vw; /* Uso de unidades de viewport (vw) para un mejor ajuste */
+  font-weight: bold;
+  box-shadow: 0 1vh #050605;
   border-radius: 30px;
 }
 
+@media (max-width: 768px) {
+  /* Estilos específicos para dispositivos móviles */
+  .opciones-desayuno {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desayuno {
+    margin-bottom: 2vw;
+  }
+}
